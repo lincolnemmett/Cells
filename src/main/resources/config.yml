@@ -1,0 +1,86 @@
+DefaultRentDays: 10
+
+Region:
+  Priority: 500
+  DefaultFlags:
+    greeting:
+      Value: "&bWelcome to &a%cellname%&b!"
+    pvp:
+      Value: "ALLOW"
+
+AuctionHouse:
+  Lowest: 20
+  Highest: 5000
+  PerChest:
+    Min: 1
+    Max: 15
+  ChestTime: 120
+
+Groups:
+  E:
+    Permission: cells.cellgroup.E
+  D:
+    Permission: cells.cellgroup.D
+
+# Date formatting: http://commons.apache.org/proper/commons-lang/javadocs/api-3.0/org/apache/commons/lang3/time/DurationFormatUtils.html
+Signs:
+  Cell:
+    Unclaimed:
+      - '&2[Cell]'
+      - ""
+      - '%time%'
+      - '&5$%price%'
+    Claimed:
+      - '&2[Cell]'
+      - '&6%owner%'
+      - '%celltimeleft%'
+      - '$%rentcost%'
+    Format: "d/H/m"
+  Auction:
+    Unclaimed:
+      - '&e[BuyChest]'
+      - '%cellowner%'
+      - ''
+      - '&5$%price%'
+    Claimed:
+      - '&e[BuyChest]'
+      - '&6%owner%'
+      - ''
+      - '%auctiontimeleft%'
+    Format: "m/s"
+CellCounter: 0
+
+Messages:
+  GroupNotFound: '&bGroup not found!'
+  GroupAlreadyExists: "&bThat group name already exists!"
+  GroupAdded: "&bAdded group!"
+  GroupRemoved: "&bRemoved group!"
+  UnableToCreateRegion: '&aUnable to create region for cell or auction house. Make sure you have made a selection before running create command. A region could be  overlapping a cell or auction house as well!'
+  CellCreated: '&aCell has been created! Cell id: %id%'
+  CellDeleted: '&aCell has been deleted!'
+  CellNotFound: '&bA cell with that id does not exist!'
+  SetHome: '&aSet cell home!'
+  RentDays: '&bUpdated %amount% cell(s) rent days.'
+  SetPrice: '&bUpdated %amount% cell(s) price.'
+  HomeNotSet: '&bHome for cell has not been set!'
+  MustBeLookingAtSign: '&bYou must be looking at a sign!'
+  AddedSign: "&bSign has been added!"
+  RemovedSIgn: "&bSign has been removed!"
+  NotCellSign: "&bNot a cell sign!"
+  AlreadyCellSign: "&bThis sign is already a cell sign!"
+  CannotRentInGroup: "&bYou cannot rent this cell in this group!"
+  CannotRentAnyMore: "&bYou cannot rent anymore cells!"
+  NotEnoughMoney: "&bYou do not have enough money to rent this cell!"
+  RentedCell: "&bCell has been rented!"
+  UnRentMoreCells: "&bYou have more than one cell. Use /cells unrent <cell id>"
+  UnRented: "&bSuccessfully un-rented cell!"
+  ResetCells: "&bSuccessfully reset cell(s)."
+  HomeMoreCells: "&bYou have more than one cell. Use /cells home <cell id>"
+  Reloaded: "&bReloaded plugin!"
+  InvalidMaterial: "&bInvalid material!"
+  CreatedAuctionHouse: "&bAuction house created!"
+  AuctionHouseAlreadyExists: "&bThat action house name already exists!"
+  AuctionHouseNotFound: "&bAuction house not found!"
+  BoughtChest: "&bYou have bought an auction house chest!"
+  Renewed: "&bRewned cell!"
+
